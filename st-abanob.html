@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <title>Grad School HTML5 Template</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+  </head>
+<body>
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Grad</em> School</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a class="external" href="index.html">Home</a></li>
+        <li class="has-submenu"><a href="">Deacon School </a>
+            <ul class="sub-menu">
+              <li><a href="st-abanob.html" class="external">St.ABANOUB </a></li> <!----FOR Pre GK GRADE?-->
+              <li><a href="#" class="external">St.David </a></li> <!--the Prophet Class for 1st, 2nd GRADE-->
+              <li><a href="#" class="external">St.Stephen </a></li> <!-----Class  for 3rd,4th GRADE-->
+              <li><a href="#" class="external">St.Athanasius </a></li> <!-----Class  for 5th,6th GRADE-->
+              <li><a href="#" class="external">St.Arch. De. Habeb Gerges </a></li> <!----Class  for 7th,8th,9th GRADE-->
+              <li><a href="#" class="external">St.Didimus the blind </a></li> <!----Class  10th,11th,12th GRADE-->
+            </ul>
+          </li>
+        
+       
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>St abanob course</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <embed  src="assets/pdf/St.Stephen.pdf#zoom=40" type="application/pdf" width="100%" height="500px" />
+        </div>
+        <div  style="color: aliceblue;" class="col-md-6 ">
+          <h1 class="">Coptic Language for Level 102</h1>
+          <div class="">
+            <h4>There are 32 letters in the Coptic
+              alphabet. We are going to divide them
+              into lessons so you could learn few
+              letters at a time. Please learn to
+              identify the letters and their order.</h4>
+              <p>Open a PDF file <a href="assets/pdf/St.Stephen.pdf">Open</a>.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by Grad School  
+          
+           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>
