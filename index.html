@@ -10,7 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <title>Deacon School </title>
-    
+    <!--------For CSS Menu-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral" />
+    <link href="assets/css/cssmenu.css" rel="stylesheet" />
+    <!------------->
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -35,9 +38,85 @@
 
 <body>
 
-   
+   <!--start CssMenu-->
+<div id="cssmenu">
+  <ul>
+      <li>
+          <span>Creative <i class="arrow"></i></span>
+          <ul class="dropdown">
+              <li><a href="#">Curabitur</a></li>
+              <li>
+                  <span>Suspendisse vel <i class="arrow"></i></span>
+                  <ul class="dropdown">
+                      <li><a href="#">Etiam vestibulum</a></li>
+                      <li><a href="#">Integer efficitur</a></li>
+                      <li><a href="#">Finibus nibh</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <span>
+                      Eget
+                      <img src="assets/images/img1.jpg" style="margin:10px;width:80px;vertical-align:middle;" />
+                      <i class="arrow"></i>
+                  </span>
+                  <ul class="dropdown">
+                      <li><a href="#">Nam elementum</a></li>
+                      <li><a href="#">Magna pharetra</a></li>
+                      <li><a href="#">Pulvinar mi eget</a></li>
+                      <li><a href="#">Tincidunt orci</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      <li><a href="#">Studio</a></li>
+      <li class="full-width">
+          <span>Press <i class="arrow"></i></span>
+          <div class="dropdown">
+              <div class="clm">
+                  <h3>Integer</h3>
+                  <a href="#">Lacus iaculis</a>
+                  <a href="#">Eu tortor</a>
+                  <a href="#">Luctus varius</a>
+              </div>
+              <div class="clm">
+                  <h3>Efficitur Viverra</h3>
+                  <a href="#">Praesent</a>
+                  <h3>At Eros</h3>
+                  <a href="#">Pellentesque </a>
+                  <a href="#">Dignissim pulvinar</a>
+              </div>
+              <div class="clm">
+                  <a href="#"><img src="assets/images/img2.jpg" style="width:280px;" /></a>
+              </div>
+          </div>
+      </li>
+      <li><a href="#">Blog</a></li>
+      <li>
+          <span>Contact <i class="arrow"></i></span>
+          <ul class="dropdown right0">
+              <li><a href="#">Nam elementum</a></li>
+              <li><a href="#">Magna pharetra</a></li>
+              <li><a href="#">Pulvinar mi eget</a></li>
+              <li><a href="#">Tincidunt orci</a></li>
+              <li>
+                  <span>
+                      Eget
+                      <img src="cssmenu/img1.jpg" style="margin:10px;width:80px;vertical-align:middle;" />
+                      <i class="arrow"></i>
+                  </span>
+                  <ul class="dropdown right0">
+                      <li><a href="#">Nam elementum</a></li>
+                      <li><a href="#">Magna pharetra</a></li>
+                      <li><a href="#">Pulvinar mi eget</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+  </ul>
+</div>
+<!--end CssMenu-->
   <!--header-->
-  <header class="main-header clearfix" role="header">
+  <!---<header class="main-header clearfix" role="header">
     <div class="logo">
       <a href="index.html"><em>Deacon</em> School</a>
     </div>
@@ -47,30 +126,21 @@
         <li><a class="external" href="index.html">Home</a></li>
         <li class="has-submenu"><a href="">Deacon School </a>
           <ul class="sub-menu">
-            <li><a href="st-abanob.html" class="external">St.ABANOUB </a></li> <!----FOR Pre GK GRADE?-->
-            <li><a href="st-david.html" class="external">St.David </a></li> <!--the Prophet Class for 1st, 2nd GRADE-->
-            <li><a href="st-stephen.html" class="external">St.Stephen </a></li> <!-----Class  for 3rd,4th GRADE-->
-            <li><a href="st-athansius.html" class="external">St.Athanasius </a></li> <!-----Class  for 5th,6th GRADE-->
-            <li><a href="st-arch-de-habib.html" class="external">St.Arch. De. Habeb Gerges </a></li> <!----Class  for 7th,8th,9th GRADE-->
-            <li><a href="st-dimuidus.html" class="external">St.Didimus the blind </a></li> <!----Class  10th,11th,12th GRADE-->
+            <li><a href="st-abanob.html" class="external">St.ABANOUB </a></li> 
+            <li><a href="st-david.html" class="external">St.David </a></li> 
+            <li><a href="st-stephen.html" class="external">St.Stephen </a></li> 
+            <li><a href="st-athansius.html" class="external">St.Athanasius </a></li> 
+            <li><a href="st-arch-de-habib.html" class="external">St.Arch. De. Habeb Gerges </a></li> 
+            <li><a href="st-dimuidus.html" class="external">St.Didimus the blind </a></li> 
           </ul>
         </li>
         <li><a href="#section5">Live Vedio</a></li>
-        <!-- <li><a href="#section5">Video</a></li> -->
+        
         <li><a href="#section6">Contact</a></li>
-        <!---<li class="has-submenu"><a href="#">About Us</a>
-          <ul class="sub-menu">
-            <li class="has-submenu"><a href="#section2">Who we are?</a>
-            </li>
-            <li><a href="#section3">What we do?</a></li>
-            <li><a href="#section3">How it works?</a></li>
-            <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
-          </ul>
-        </li>--->
+        
       </ul>
     </nav>
-  </header>
-
+  </header>--->
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
@@ -105,7 +175,8 @@
                 <h4><i class="fa fa-pencil"></i>Deacon School</h4>
               </div>
               <div class="content-hide">
-                <p>Saint Mary Coptic Orthodox Church is the only Coptic Orthodox Church in Iowa.The term “Copts” is equivalent to the word “Egyptians.” It is derived from the Greek “Aigyyptos,” which in turns is derived from the ancient Egyptian “Ha-ka-Ptah,” i.e. “the house of the spirit Ptah,” a most highly revered deity in Egyptian mythology. From the Arab conquest and until today, This term refers to the Christian Egyptians to distinguish them from the native Muslims.</p>
+                <p></p>
+                <p class="hidden-sm">Saint Mary Coptic Orthodox Church is the only Coptic Orthodox Church in Iowa.The term “Copts” is equivalent to the word “Egyptians.” It is derived from the Greek “Aigyyptos,” which in turns is derived from the ancient Egyptian “Ha-ka-Ptah,” i.e. “the house of the spirit Ptah,” a most highly revered deity in Egyptian mythology. From the Arab conquest and until today, This term refers to the Christian Egyptians to distinguish them from the native Muslims.</p>
                 <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
             </div>
             </div>
@@ -118,9 +189,9 @@
                 <h4><i class="fa fa-graduation-cap"></i>SONS OF PHAROHS</h4>
               </div>
               <div class="content-hide">
-                <p>The Copts as the successors of the ancient Egyptians are defined as the modern sons of the Pharaohs. They played an essential role in the whole Christian world, especially during the first five centuries.
+                <p</p>
+                <p class="hidden-sm">The Copts as the successors of the ancient Egyptians are defined as the modern sons of the Pharaohs. They played an essential role in the whole Christian world, especially during the first five centuries.
                   Their religious background helped them to accept Christianity with eagerness and to enjoy its depth through their ascetic life, meditation and studying of the Holy Scripture.</p>
-                <!---<p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>--->
                 <div class="scroll-to-section"><a href="#section3">Details</a></div>
             </div>
             </div>
