@@ -14,7 +14,8 @@
     font-size:0;
     text-align:center;
     color:#EEEEEE;
-    background-color: #205081;
+    background-color: rgba(22,34,57,0.95);
+    /*background-color: #205081;*/
     border: transparent;
     margin:0; 
     padding:0;
