@@ -23,10 +23,14 @@
     position:relative;
     z-index:999999990;
     border-radius: 3px;
+    
 } 
 
 #cssmenu li
 {
+    /*added by me*/
+    border: 1px solid black;
+    /*added by me*/
     display:inline-block;
     position:relative;    
     font-size:0; 
